@@ -17,11 +17,20 @@
     <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 </head>
 <body>
-
-
+    <div class="website_header">
+        <h1 class="header1">Weather to Go There in the U.S.?</h1>
+        <h2 class="header2">A brief look at 2022 weather in the U.S.</h2>
+        <h4 class="header4">Select the weather aspect you want to review. Hover over the map to see specific values by weather station.
+            <br>The Top Ten Stations chart will adapt based on the chosen weather select and the state you choose.
+            <br>To dive into more detail by station, select the desired station.
+        </h4>
+    </div>
   
-    <!-- Our JavaScript -->
-    <script src="./static/js/data.js"></script>
-    <script src="./static/js/plots.js"></script>
+    <!-- Our Data -->
+    <script src="./static/data/stations_all.js"></script>
+    <script src="./static/data/state_station_hot.js"></script>
+    <script src="./static/data/state_station_cold.js"></script>
+    <!-- OUr JavaScript -->
+    <script src="./static/js/logic.js"></script>
 </body>
 </html>
