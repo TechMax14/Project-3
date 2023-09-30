@@ -22,9 +22,16 @@
         <h2 class="header2">A brief look at 2022 weather in the U.S.</h2>
         <h4 class="header4">Select the weather aspect you want to review. Hover over the map to see specific values by weather station.
             <br>The Top Ten Stations chart will adapt based on the chosen weather select and the state you choose.
-            <br>To dive into more detail by station, select the desired station.
+            <br>To dive into more detail by station, select the desired station.<br>
+            <select id="selDataset">
+                <option value="hottest">Hottest</option>
+                <option value="coldest">Coldest</option>
+                <option value="severity">Severity Rating</option>
+            </select>
         </h4>
+        
     </div>
+    
   
     <!-- Our Data -->
     <script src="./static/data/stations_all.js"></script>
