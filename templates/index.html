@@ -9,10 +9,12 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!-- Plotly source -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Leaflet source -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin="" />
+      <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <!-- Leaflet JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <!-- Leaflet Heatmap Plugin JavaScript (Version 0.2.0) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 </head>
@@ -87,7 +89,8 @@
 
     <!-- Our Data -->
     <script src="./static/data/stations_all.js"></script>
-    <script src="./static/js/logic_top10.js"></script>
-    <script src="./static/js/logic_table.js"></script>
+    <script src="./static/js/logic_heatmap.js"></script>
+    <!-- <script src="./static/js/logic_top10.js"></script> -->
+    <!-- <script src="./static/js/logic_table.js"></script> -->
 </body>
 </html>
