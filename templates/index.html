@@ -17,11 +17,77 @@
     <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 </head>
 <body>
+    <!-- Our Header -->
+    <div class="website_header">
+        <h1 class="header1">Weather to Go There in the U.S.?</h1>
+        <h2 class="header2">A brief look at 2022 weather in the U.S.</h2>
+        <h4 class="header4">Select the weather aspect you want to review. Hover over the map to see specific values by weather station.
+            <br>The Top Ten Stations chart will adapt based on the chosen weather select and the state you choose.
+            <br>To dive into more detail by station, select the desired station.
+        </h4>
+        <!-- Our Primary Dropdown -->
+        <select id="selDataset">
+            <option value="Hottest">Hottest</option>
+            <option value="Coldest">Coldest</option>
+            <option value="Severity">Severity Rating</option>
+        </select>
+    </div>
+    
+    <!-- Our heatmap part -->
+    <div id="heatmap_space">
+        <div id="heatmap"></div>
+    </div>
+
+    <!-- Our top 10 chart part -->
+    <div id="top10_space">
+        <h3>State Selection: <br>
+        <select id="stateDataset"></select> </h3>
+        <div id="top10_plot"></div>
+    </div>
+
+    <!-- Our station table part -->
+    <div id="station_detail_space">
+        <h3>Station Selection: <br>
+        <select id="stationDataset"></select> </h3>
+        <table id="station_table">
+            <tr>
+                <th id="station_identifier" colspan="2">Station ID: Station Name, State</th>
+            </tr>
+            <tr>
+                <td>Absolute Min Temp</td>
+                <td id="min_temp">...</td>
+            </tr>
+            <tr>
+                <td>Mean Temp</td>
+                <td id="mean_temp">...</td>
+            </tr>
+            <tr>
+                <td>Absolute Max Temp</td>
+                <td id="max_temp">...</td>
+            </tr>
+            <tr>
+                <td>Total Snow</td>
+                <td id="total_snow">...</td>
+            </tr>
+            <tr>
+                <td>Total Precipitation</td>
+                <td id="total_precipitation">...</td>
+            </tr>
+            <tr>
+                <td>Days with Hail</td>
+                <td id="tornado_funnel_cloud">...</td>
+            </tr>
+            <tr>
+                <td>Days with Tornado(s)</td>
+                <td id="hail">...</td>
+            </tr>
+        </table>
+    </div>
 
 
-  
-    <!-- Our JavaScript -->
-    <script src="./static/js/data.js"></script>
-    <script src="./static/js/plots.js"></script>
+    <!-- Our Data -->
+    <script src="./static/data/stations_all.js"></script>
+    <script src="./static/js/logic_top10.js"></script>
+    <script src="./static/js/logic_table.js"></script>
 </body>
 </html>
