@@ -7,12 +7,12 @@ let map;
 // ## Set the dictionaries for Hottest vs. Coldest vs. Severity
 let data_values = {"Hottest" :  "max_temp",  "Coldest" : "min_temp",  "Severity" : "severity_rating"}
 let map_colors = {"Hottest" :  ["#fee0d2", "#fc9272", "#de2d26", "#c31e18", "#9c100b"],  
-                    // "Coldest" : ["#3182bd", "#1f71ab", "#0d588d", "#064674", "#023153"],
-                    "Coldest" : ["#023153", "#064674", "#0d588d", "#1f71ab","#3182bd"],
+                    "Coldest" : ["#3182bd", "#1f71ab", "#0d588d", "#064674", "#023153"],
+                    // "Coldest" : ["#023153", "#064674", "#0d588d", "#1f71ab","#3182bd"],
                     "Severity" : ["#efedf5", "#bcbddc", "#756bb1", "#5e5597", "#48407e"]}
 let map_gradients = {"Hottest" :  { 0: "#fee0d2", 0.25: "#fc9272", 0.5: "#de2d26", 0.75: "#c31e18", 1: "#9c100b" },  
-                    // "Coldest" : {0: "#3182bd", 0.25: "#1f71ab", 0.5: "#0d588d", 0.75: "#064674", 1: "#023153"},
-                    "Coldest" : {0: "#023153", 0.25: "#064674", 0.5: "#0d588d", 0.75: "#1f71ab", 1: "#3182bd"},
+                    "Coldest" : {0: "#3182bd", 0.25: "#1f71ab", 0.5: "#0d588d", 0.75: "#064674", 1: "#023153"},
+                    // "Coldest" : {0: "#023153", 0.25: "#064674", 0.5: "#0d588d", 0.75: "#1f71ab", 1: "#3182bd"},
                     "Severity" : {0: "#efedf5", 0.25: "#bcbddc", 0.5: "#756bb1", 0.75: "#5e5597", 1: "#48407e"}}
 let hover_text = {"Hottest" :  "2022 Absolute Max Temp",  
                 "Coldest" : "2022 Absolute Min Temp",  
@@ -55,7 +55,7 @@ function createHeatmap(weatherType) {
 
   function getRadius(dataPoint, multiplier, mapType) {
     if (mapType == "min_temp"){
-      dataPoint += 75
+      dataPoint = Math.abs(dataPoint - 75)
     }
     return dataPoint * multiplier
   }
