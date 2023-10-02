@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Events</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>NOAA GSOD Weather Data</h1>
+    <label for="stationSelect">Select a Station:</label>
+    <select id="stationSelect"></select>
+
+    <div id="stationInfo">Station ID: N/A, Station Name: N/A, State: N/A</div>
+
+    <!-- <table id="stationTable" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Min Temp (°F)</th>
+                <th>Mean Temp (°F)</th>
+                <th>Max Temp (°F)</th>
+                <th>Total Snow</th>
+                <th>Total Precipitation</th>
+                <th>Tornado Funnel Cloud</th>
+                <th>Hail</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table> -->
+    <!-- <table id="stationTable" class="table table-striped"> -->
+    <table >
+        <tr>
+            <th id="station_identifier" colspan="2">Station ID: Station Name, State</th>
+        </tr>
+        <tr>
+            <td>Absolute Min Temp</td>
+            <td id="min_temp">...</td>
+        </tr>
+        <tr>
+            <td>Mean Temp</td>
+            <td id="mean_temp">...</td>
+        </tr>
+        <tr>
+            <td>Absolute Max Temp</td>
+            <td id="max_temp">...</td>
+        </tr>
+        <tr>
+            <td>Total Snow</td>
+            <td id="total_snow">...</td>
+        </tr>
+        <tr>
+            <td>Total Precipitation</td>
+            <td id="total_precipitation">...</td>
+        </tr>
+        <tr>
+            <td>Days with Hail</td>
+            <td id="tornado_funnel_cloud">...</td>
+        </tr>
+        <tr>
+            <td>Days with Tornado(s)</td>
+            <td id="hail">...</td>
+        </tr>
+    </table>
+
+    <script src="data/stations_all.json"></script>
+    <script src="logic_table_file.js"></script>
+
+</body>
+</html>
+
+<!-- PROPER CODE TO ORIENT CORRECTLY (?) -->
+<!-- <thead> 
+    <tr>
+        <th>Station</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Min Temp (°F)</td>
+        <td class="data-value" id="minTemp"></td>
+    </tr>
+    <tr>
+        <td>Mean Temp (°F)</td>
+        <td class="data-value" id="meanTemp"></td>
+    </tr>
+    <tr>
+        <td>Max Temp (°F)</td>
+        <td class="data-value" id="maxTemp"></td>
+    </tr>
+    <tr>
+        <td>Total Snow</td>
+        <td class="data-value" id="totalSnow"></td>
+    </tr>
+    <tr>
+        <td>Total Precipitation</td>
+        <td class="data-value" id="totalPrecipitation"></td>
+    </tr>
+</tbody> -->

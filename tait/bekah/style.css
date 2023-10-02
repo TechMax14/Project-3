@@ -1,0 +1,43 @@
+/* Import Bootstrap CSS */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+/* Your custom styles go here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333333;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Style for the table */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgba(106, 191, 106, 0.772); /* Set the background color to green */
+}
+
+/* Style for table headers */
+.table th {
+    background-color: #0aa214dd;
+    color: #fff;
+    padding: 10px;
+    text-align: center; /* Center-align header text */
+}
+
+/* Style for table rows */
+.table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: center; /* Center-align cell contents */
+}
+
+/* Style for alternating rows */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
