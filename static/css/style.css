@@ -1,70 +1,27 @@
 html,
-body,
-
-
-#map-id {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-/* Need to find way to format nicer */
-#heatmap_space {
-  /* height: 100%;
-  width: 50%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  top: 0%; left: 0%; */
-  background-color: #baf3f7;
+body{
+  background-color: #ffffff;
 }
 
 /* Need to find way to format nicer */
 #top10_space {
-  /* height: 50%;
-  width: 50%;
   padding: 0;
   margin: 0;
-  position: relative;
-  top: 0%; left: 50%; */
-  background-color: #f5f6d8;
-}
-
-/* Need to find way to format nicer */
-#station_detail_space {
-  /* height: 50%;
-  width: 50%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  top: 35%; left: 50%; */
-  background-color: #e4f3dc;
-}
-
-#station_table, tr, td {
-  border: 1px solid;
-}
-#station_table {
-  background: #cdf4bb;
-  margin-left: auto;
-  margin-right: auto;
-}
-#station_table tr:nth-child(even) { 
-  background: #a8d095; 
-}
-#station_identifier {
-  text-align: center;
-  background: #297e01;
-  color: #ffffff;
+  background-color: #e6e7d1;
 }
 
 .website_header {
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(100, 0, 200, 0.787);
   background-color: #c7c7c7;
   text-align: center;
 }
-
+#selDataset{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(100, 0, 200, 0.787);
+}
 .header1{
   font-size: 48px;
   font-weight: bold;
@@ -80,9 +37,4 @@ body,
 .header4{
   font-size: 20px;
   font-weight: bold;
-}
-#selDataset{
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(100, 0, 200, 0.787);
 }

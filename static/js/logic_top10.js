@@ -109,7 +109,7 @@ function makeTop10Chart(topTenStations, weather_type) {
     let layout = {title: "Top 10 Stations by Selected State", 
         xaxis:{title: xAxisTitle[weather_type]},
         plot_bgcolor:"#f5f6d8",
-        paper_bgcolor:"#f5f6d8",
+        paper_bgcolor:"#e6e7d1",
         // Prevent labels from being cutoff
         yaxis: {automargin: true},
         yaxis2: {side: 'right', automargin: true}
