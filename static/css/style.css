@@ -52,6 +52,7 @@ body{
 
 /* Style for table headers */
 .table th {
+  font-size: 22px;
   background-color: #0aa214dd;
   color: #fff;
   padding: 10px;
