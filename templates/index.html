@@ -46,16 +46,58 @@
     </div>
 
     <!-- Our station table part -->
-    <div id="station_detail_space">
-        <h3>Station Selection: <br>
-        <select id="stationDataset"></select> </h3>
-        
-    </div>
+    <label for="stationSelect">Select a Station:</label>
+    <select id="stationSelect"></select>
 
+    <!-- <div id="stationInfo">Station ID: N/A, Station Name: N/A, State: N/A -->
+        
+     <!-- <div class="container">
+      <div class="row">
+       <div class="col-md-12"> -->
+        <!-- <table id="stationTable" class="table"> -->
+            <!-- <tbody> -->
+        <table id="stationTable" class="table">
+                <tr>
+                    <th id="station_identifier" colspan="2">Station ID: Station Name, State</th>
+                </tr>
+                <tr>
+                    <td>Absolute Min Temp (°F)</td>
+                    <td class="data-value" id="min_temp"></td>
+                </tr>
+                <tr>
+                    <td>Mean Temp (°F)</td>
+                    <td class="data-value" id="mean_temp"></td>
+                </tr>
+                <tr>
+                    <td>Absolute Max Temp (°F)</td>
+                    <td class="data-value" id="max_temp"></td>
+                </tr>
+                <tr>
+                    <td>Total Snow</td>
+                    <td class="data-value" id="total_snow"></td>
+                </tr>
+                <tr>
+                    <td>Total Precipitation</td>
+                    <td class="data-value" id="total_precipitation"></td>
+                </tr>
+                <tr>
+                    <td>Days with Hail</td>
+                    <td class="data-value" id="tornado_funnel_cloud"></td>
+                </tr>
+                <tr>
+                    <td>Days with Tornado(s)</td>
+                    <td class="data-value" id="hail"></td>
+                </tr>
+            <!-- </tbody> -->
+        </table>
+    </div>
 
     <!-- Our Data -->
     <script src="./static/data/stations_all.js"></script>
+    <!-- <script src="./static/data/stations_all.json"></script> -->
+
     <!-- Our JavaScript -->
     <script src="./static/js/logic_top10.js"></script>
+    <script src="./static/js/logic_table_file.js"></script>
 </body>
 </html>

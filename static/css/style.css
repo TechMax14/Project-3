@@ -38,3 +38,50 @@ body{
   font-size: 20px;
   font-weight: bold;
 }
+
+
+/* Station Table Styling */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(106, 191, 106, 0.772);
+  border: 1px solid;
+  /* margin: 0 auto; */
+}
+
+/* Style for table headers */
+.table th {
+  background-color: #0aa214dd;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for table rows */
+.table td {
+  padding: 8px;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  text-align: center;
+}
+
+/* Style for alternating rows */
+.table tr:nth-child(even) {
+  background-color: rgba(215, 238, 215, 0.772);
+}
+
+/* Style for the stationInfo div */
+#stationInfo {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style for the select dropdown */
+#stationSelect {
+  margin-top: 10px;
+}
+
+#stationTable, tr, td {
+  border: 1px solid #333333;
+} 
