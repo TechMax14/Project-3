@@ -103,11 +103,9 @@ body{
   position: absolute;
   bottom: 20px;
   right: 20px;
-  /* Set a percentage width and height based on the viewport size */
-  width: 15%;
-  height: 15%;
-  max-width: 175px; /* Add a maximum width to prevent it from becoming too large */
-  max-height: 175px; /* Add a maximum height to prevent it from becoming too large */
+  /* Set a specific width height to keep text in container across monitor differences */
+  width: 150px;
+  height: 140px;
   background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
@@ -130,6 +128,6 @@ body{
 }
 
 .legend-label {
-  font-size: 25px;
+  font-size: 20px;
   color: #0c0c0c;
 }
