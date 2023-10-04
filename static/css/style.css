@@ -101,10 +101,13 @@ body{
 
 #legend-container {
   position: absolute;
-  bottom: 0px;
-  right: 850px;
-  height: 175px;
-  width: 175px;
+  bottom: 20px;
+  right: 20px;
+  /* Set a percentage width and height based on the viewport size */
+  width: 175%;
+  height: 175%;
+  max-width: 200px; /* Add a maximum width to prevent it from becoming too large */
+  max-height: 200px; /* Add a maximum height to prevent it from becoming too large */
   background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
