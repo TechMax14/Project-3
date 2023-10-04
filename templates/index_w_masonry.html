@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather to Go There</title>
+    <!-- D3 library source -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Plotly source -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <!-- Leaflet JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <!-- Leaflet Heatmap Plugin JavaScript (Version 0.2.0) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+    <!-- Masonry Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column for Heatmap -->
+        <div class="left-column">
+            <!-- Our Header -->
+            <div class="website_header">
+                <h1 class="header1">Weather to Go There in the U.S.?</h1>
+                <h2 class="header2">A brief look at 2022 weather in the U.S.</h2>
+                <h4 class="header4">Select the weather aspect you want to review. Hover over the map to see specific values by weather station.
+                    <br>The Top Ten Stations chart will adapt based on the chosen weather select and the state you choose.
+                    <br>To dive into more detail by station, select the desired station.
+                </h4>
+                <!-- Our Primary Dropdown -->
+                <select id="selDataset">
+                    <option value="Hottest">Hottest</option>
+                    <option value="Coldest">Coldest</option>
+                    <option value="Severity">Severity Rating</option>
+                </select>
+            </div>
+
+            <!-- Our heatmap part -->
+            <div id="heatmap_space">
+                <div id="heatmap"></div>
+            </div>
+
+            <!-- Legend container inside the body -->
+            <div id="legend-container">
+                <div id="legend"></div>
+            </div>
+        </div>
+
+        <!-- Right Column for Top 10 and Table -->
+        <div class="right-column">
+<!-- Top Right Subcolumn for Top 10 (Masonry Grid) -->
+<div class="top-right-subcolumn">
+    <h3>State Selection: <br>
+    <select id="stateDataset"></select> </h3>
+    <!-- Masonry Grid Container -->
+    <div class="top-right-masonry">
+        <!-- Content for the top-right Masonry grid -->
+        <div class="masonry-item">
+            <h4>Top 10 Stations</h4>
+            <!-- Add the content for the Top 10 Stations chart here (e.g., chart or data) -->
+            <div id="top10_plot">
+                <!-- You can add your chart or data visualization here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bottom Right Subcolumn for Table (Masonry Grid) -->
+<div class="bottom-right-subcolumn">
+    <h3>Station Selection: <br>
+    <select id="stationDataset"></select> </h3>
+    <!-- Masonry Grid Container -->
+    <div class="bottom-right-masonry">
+        <!-- Content for the bottom-right Masonry grid -->
+        <div class="masonry-item">
+            <h4>Station Details</h4>
+            <!-- Add the content for the station details table here -->
+            <table id="station_table">
+                <tr>
+                    <th id="station_identifier" colspan="2">Station ID: Station Name, State</th>
+                </tr>
+                <tr>
+                    <td>Absolute Min Temp</td>
+                    <td id="min_temp">...</td>
+                </tr>
+                <tr>
+                    <td>Mean Temp</td>
+                    <td id="mean_temp">...</td>
+                </tr>
+                <tr>
+                    <td>Absolute Max Temp</td>
+                    <td id="max_temp">...</td>
+                </tr>
+                <tr>
+                    <td>Total Snow</td>
+                    <td id="total_snow">...</td>
+                </tr>
+                <tr>
+                    <td>Total Precipitation</td>
+                    <td id="total_precipitation">...</td>
+                </tr>
+                <tr>
+                    <td>Days with Hail</td>
+                    <td id="tornado_funnel_cloud">...</td>
+                </tr>
+                <tr>
+                    <td>Days with Tornado(s)</td>
+                    <td id="hail">...</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Our Data -->
+    <script src="./static/data/stations_all.js"></script>
+    <!-- Your other scripts and content -->
+
+    <!-- Masonry Initialization Script -->
+    <script>
+        // Initialize Masonry for the right columns
+        var topRightColumn = document.querySelector('.top-right-subcolumn');
+        var bottomRightColumn = document.querySelector('.bottom-right-subcolumn');
+        var masonryOptions = {
+            itemSelector: '.masonry-item',
+            // Other Masonry options...
+        };
+        var topRightMasonry = new Masonry(topRightColumn, masonryOptions);
+        var bottomRightMasonry = new Masonry(bottomRightColumn, masonryOptions);
+    </script>
+
+    <style>
+        /* CSS for the layout (You can keep or modify this CSS) */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .left-column {
+            flex: 2.5;
+            padding: 20px;
+        }
+
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-right-subcolumn, .bottom-right-subcolumn {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</body>
+</html>
