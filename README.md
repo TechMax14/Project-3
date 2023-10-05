@@ -32,6 +32,7 @@ Starting Page: <br> ![Starting Page](images/InitialWedbpage.png)
 
 
 # File Notes
+**Main Branch**
 * app.py contains the flask calls wrapping our webpage code to call it via terminal (contributor(s): Tait, Rebekah)
 * templates folder contains the index.html file as the core webapge (contributor(s): Rebekah, Angelo, Tait)
 * static/js folder contains the logic javascript file called by the index.html
@@ -46,7 +47,8 @@ Starting Page: <br> ![Starting Page](images/InitialWedbpage.png)
   * stations_all.js is exported by the python code to contain all the data required by the javascript
   * stations_all.csv and stations_all.json contain the same data as stations_all.js but in other formats for readability in different ways
   * stations_prcp_detail.csv and stations_prcp_detail.json are exported for a time intensive query for precipitation so the data can be pulled in future sessions without redoing the query
-
+**Prototyping Branch**
+Research contributions: Everyone!
 
 # References
 * NOAA Global Surface Summary of the Day (GSOD) https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516
