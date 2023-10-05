@@ -249,8 +249,8 @@ function makeTop10Chart(topTenStations, weather_type) {
     // Apply a title to the layout
     let layout = {
         title: {
-            text: "<b>Top 10 Stations by Selected State & Weather Condition</b>",
-            font: {size: 22}
+            text: "<b>Top 10 Stations by Selected State <br> & Weather Condition</b>",
+            font: {size: 20}
         }, 
         xaxis:{title: xAxisTitle[weather_type]},
         plot_bgcolor:"#f5f6d8",
