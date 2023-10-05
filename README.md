@@ -65,11 +65,15 @@ To display the webpage locally, you must have an environment with conda, python,
 In addition, if you want to run the jupyter notebook, your environment will require jupyter notebook and you will need to have a google account with with BigQuery project per the instructions within the jupyter notebook.
 
 ## Cloning Repo & Displaying the Webpage Locally
+```
 $ git clone https://github.com/TechMax14/Project-3.git
-
+```
+```
 $ cd Project-3
-
+```
+```
 $ flask run
+```
 
 open http://127.0.0.1:5000 in a local browser
 
