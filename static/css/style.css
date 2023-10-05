@@ -131,3 +131,41 @@ body{
   font-size: 20px;
   color: #0c0c0c;
 }
+
+/* Add the following CSS for Masonry layout */
+.masonry-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.masonry-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Update header to span across the entire webpage */
+.website_header {
+  width: 100%;
+}
+
+/* Left side layout for heatmap and legend */
+.left-column {
+  width: 65%; /* Adjust as needed */
+}
+
+/* Right side layout for top10 and stationInfo */
+.right-column {
+  width: 32%; /* Adjust as needed */
+}
+
+/* Additional styles for the layout */
+.top-right-subcolumn {
+  margin-bottom: 20px;
+}
+
+.bottom-right-subcolumn {
+  margin-top: 20px;
+}
+
