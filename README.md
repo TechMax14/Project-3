@@ -47,7 +47,9 @@ Starting Page: <br> ![Starting Page](images/InitialWedbpage.png)
   * stations_all.js is exported by the python code to contain all the data required by the javascript
   * stations_all.csv and stations_all.json contain the same data as stations_all.js but in other formats for readability in different ways
   * stations_prcp_detail.csv and stations_prcp_detail.json are exported for a time intensive query for precipitation so the data can be pulled in future sessions without redoing the query
+
 **Prototyping Branch**
+
 Research contributions: Everyone!
 
 # References
