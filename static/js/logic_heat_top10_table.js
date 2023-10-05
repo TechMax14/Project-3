@@ -21,14 +21,14 @@ let map_gradients = {"Hottest" :  { 0: "#fee0d2", 0.25: "#fc9272", 0.5: "#de2d26
 let hover_text = {"Hottest" :  "2022 Absolute Max Temp",  
                 "Coldest" : "2022 Absolute Min Temp",  
                 "Severity" : "2022 Severity Rating"}
-let radius_multiplier = {"Hottest" :  10,  "Coldest" : 10,  "Severity" : 500}
+let radius_multiplier = {"Hottest" :  10,  "Coldest" : 10,  "Severity" : 250}
 // Set the top10 dictionaries for Hottest vs. Coldest vs. Severity
 let data_file = {"Hottest" :  "state_station_hot",  "Coldest" : "state_station_cold",  "Severity" : "state_station_severity"}
 let data_sort = {"Hottest" :  "descending",  "Coldest" : "ascending",  "Severity" : "descending"}
 let xAxisTitle = {"Hottest" : "Temperature (F)", "Coldest" : "Temperature (F)", "Severity" : "Rating"}
 let yAxisSelection = {"Hottest" : "y", "Coldest" : "y2", "Severity" : "y"}
 // Create a list of the table cell ids
-let tableIDs = ["station_identifier", "min_temp", "mean_temp", "max_temp", "total_snow", "total_precipitation", "tornado_funnel_cloud", "hail"]
+let tableIDs = ["station_identifier", "min_temp", "mean_temp", "max_temp", "total_precipitation", "high_sndp_change_days", "days_with_tornado", "days_with_hail"]
 
 // ## Get the Station Data
 let stationsData = stations_all

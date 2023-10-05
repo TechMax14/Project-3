@@ -29,7 +29,7 @@ A dashboard for a user to investigate U.S. weather to help determine whether to 
     * populate the table with the following data: absolute min temp, mean temp, absolute max temp, total snow, total precipitation, days with hail, days with tornados
 
 Starting Page: <br> ![Starting Page](images/InitialWedbpage.png)
-
+Severity View: <br> ![Severity View](images/SeverityView.png)
 
 # File Notes
 **Main Branch**
@@ -42,15 +42,14 @@ Starting Page: <br> ![Starting Page](images/InitialWedbpage.png)
   * Integration (contributor(s): Rebekah)
 * static/css folder contains the css to style the website (contributor(s): Angelo, Tait, Rebekah)
 * static/py folder contains the jupyter notebook with the SQL queries, transformation efforts, and file exports to provide data for the js scripts
-  * noaa-bigquery-scripts.ipynb (contributor(s): Rebekah, Max, Mauricio)
+  * noaa-bigquery-scripts.ipynb (contributor(s): Max, Mauricio, Rebekah)
 * static/data folder contains the data exported by the python code doing SQL queries and referenced by the javascript
   * stations_all.js is exported by the python code to contain all the data required by the javascript
   * stations_all.csv and stations_all.json contain the same data as stations_all.js but in other formats for readability in different ways
   * stations_prcp_detail.csv and stations_prcp_detail.json are exported for a time intensive query for precipitation so the data can be pulled in future sessions without redoing the query
 
 **Prototyping Branch**
-
-Research contributions: Everyone!
+<br>Research contributions: Angelo, Rebekah, Tait, Mauricio, Max
 
 # References
 * NOAA Global Surface Summary of the Day (GSOD) https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00516
@@ -62,13 +61,17 @@ Research contributions: Everyone!
 # Getting Started
 
 ## Prerequisites
-You must have an evironment with conda, python, jupyter notebook, flask, and a web browser to access all portions of this project.
-In addition, if you want to run the jupyter notebook, you will need to have a google account and activate it with BigQuery per the instructions within the jupyter notebook.
+To display the webpage locally, you must have an environment with conda, python, flask, and a web browser. Then follow the Cloning Repo & displaying the Webpage Locally details.<br>
+In addition, if you want to run the jupyter notebook, your environment will require jupyter notebook and you will need to have a google account with with BigQuery project per the instructions within the jupyter notebook.
 
-## Cloning Repo
+## Cloning Repo & Displaying the Webpage Locally
 $ git clone https://github.com/TechMax14/Project-3.git
 
 $ cd Project-3
+
+$ flask run
+
+open http://127.0.0.1:5000 in a local browser
 
 # Built With
 * Python v3.10.11
