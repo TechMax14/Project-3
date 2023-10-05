@@ -66,13 +66,13 @@ In addition, if you want to run the jupyter notebook, your environment will requ
 
 ## Cloning Repo & Displaying the Webpage Locally
 ```
-$ git clone https://github.com/TechMax14/Project-3.git
+git clone https://github.com/TechMax14/Project-3.git
 ```
 ```
-$ cd Project-3
+cd Project-3
 ```
 ```
-$ flask run
+flask run
 ```
 
 open http://127.0.0.1:5000 in a local browser
