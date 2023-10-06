@@ -47,6 +47,9 @@ Severity View: <br> ![Severity View](images/SeverityView.png)
   * stations_all.js is exported by the python code to contain all the data required by the javascript
   * stations_all.csv and stations_all.json contain the same data as stations_all.js but in other formats for readability in different ways
   * stations_prcp_detail.csv and stations_prcp_detail.json are exported for a time intensive query for precipitation so the data can be pulled in future sessions without redoing the query
+* WeatherToGoThereProposal.pdf is our initial proposal
+* WeatherToGoThereProposalUpdate.pdf is out updated proposal after completing some more Leaflet heatmap research
+* WeatherPresentation.pdf is our final presentation
 
 **Prototyping Branch**
 <br>Research contributions: Angelo, Rebekah, Tait, Mauricio, Max
